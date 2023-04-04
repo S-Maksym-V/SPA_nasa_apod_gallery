@@ -12,9 +12,9 @@
   --black: hsl(0 10% 6%);
 
   // Variablennamen zum Beschreiben der Funktion
-  --background-color: var(--honeydew);
+  --background-color: hsl(var(--blue-11-hsl) / 90%);
   --text-color: var(--prussian-blue);
-  --heading-color: var(--imperial-red);
+  --heading-color: var(--powder-blue);
   --link-color: var(--imperial-red);
   --active-link-color: var(--celadon-blue);
 

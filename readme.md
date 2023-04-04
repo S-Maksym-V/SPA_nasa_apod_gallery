@@ -12,7 +12,7 @@ based on NASA Open API: https://api.nasa.gov/
 
 - Index-Seite:
 
-  - Überschrift
+  - Überschrift [done]
   - Button "Download selected". Ausgegraut, bis nichts markiert
   - Ein Feld mit Bild-Kacheln
   - Übergang zur details-Seite (Info über Bild) beim Click auf einer Kachel
