@@ -10,14 +10,23 @@
   --celadon-blue: hsl(203 39% 44%);
   --prussian-blue: hsl(215 50% 23%);
   --black: hsl(0 10% 6%);
+  --dark-purple: hsl(230, 33%, 21%);
+  --white: hsl(60, 100%, 100%);
+  --light-gray: hsl(235, 15%, 70%);
+  --orange: hsl(32, 100%, 51%);
+  --medium-red: hsl(339, 78%, 55%);
+  --dark-red: hsl(0, 100%, 43%);
+  --light-red: hsl(7, 86%, 62%);
+  --text: var(--light-gray);
 
   // Variablennamen zum Beschreiben der Funktion
   --background-color: hsl(var(--blue-11-hsl) / 90%);
-  --text-color: var(--prussian-blue);
+  --text-color: var(--powder-blue);
   --heading-color: var(--powder-blue);
   --link-color: var(--imperial-red);
   --active-link-color: var(--celadon-blue);
-
+  --button-background-color: var(--dark-purple);
+  --button-text-color: var(--blue-4);
   // https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web
   @media (prefers-color-scheme: dark) {
   }

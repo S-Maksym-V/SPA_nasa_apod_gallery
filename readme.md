@@ -13,11 +13,13 @@ based on NASA Open API: https://api.nasa.gov/
 - Index-Seite:
 
   - Überschrift [done]
-  - Button "Download selected". Ausgegraut, bis nichts markiert
+  - Button "Download selected":
+    - Button erstellen [done]
+    - Ausgegraut, bis nichts markiert
   - Ein Feld mit Bild-Kacheln
   - Übergang zur details-Seite (Info über Bild) beim Click auf einer Kachel
   - Jede Kachel hat Checkbox "select"
-  - Background: Gradient aus https://open-props.style/ oder eine Farbe oder ein Bild
+  - Background: Gradient aus https://open-props.style/ oder eine Farbe oder ein Bild [done, can be changed]
 
 - Je details-Seite hat eigene URL
 - Ansicht / Anzahl der Bilder: Bilder absteigend nach Zeit angezeigt: von heutigem Datum in Vergangenheit soweit wie möglich. 40 Bilder pro Seite.
@@ -39,7 +41,8 @@ based on NASA Open API: https://api.nasa.gov/
   - Shake von Bild-Kacheln
   - Ein Bereich auf der Seite (rechts), wohin Bilder für Markieren zum Herunterladen überzogen werden können. Die Bilder werden dort gestapelt. Durch "Download selected" alle gestapelte Bilder herunterladen.
 
-- Responsive index-Seite
+- Responsive index-Seite:
+  - Überschrift: Gallery of NASA APOD (Astronomy Picture of the Day) --> reduzieren bis "Gallery of NASA APOD"
 - Responsive details-Seiten
 
 - Index-Seite:
