@@ -1,9 +1,9 @@
 @use 'globals' as *;
 
-.site-wrapper {
-  //   background-image: var(--gradient-5);
+body {
+  color: var(--text-color);
+  font-size: var(--step-0);
   background-color: var(--background-color);
-  min-height: 100vh;
 }
 
 button {
@@ -22,5 +22,30 @@ button {
   &:hover,
   &:focus {
     background-color: var(--black);
+  }
+}
+.pics-set {
+  margin: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.tile {
+  height: 20rem;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img {
+    display: block;
+    border-radius: 1rem;
+    width: 100%;
+    // max-width: 25rem;
+    height: 100%;
+    // max-height: 25rem;
   }
 }
