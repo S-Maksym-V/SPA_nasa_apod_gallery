@@ -27,6 +27,7 @@
   --active-link-color: var(--celadon-blue);
   --button-background-color: var(--dark-purple);
   --button-text-color: var(--blue-4);
+  --footer-background-color: hsl(var(--blue-10-hsl) / 90%);
   // https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web
   @media (prefers-color-scheme: dark) {
   }

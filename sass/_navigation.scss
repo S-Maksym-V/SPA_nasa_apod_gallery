@@ -4,4 +4,5 @@ a {
   &:focus {
     color: var(--active-link-color);
   }
+  cursor: pointer;
 }

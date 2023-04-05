@@ -27,6 +27,7 @@ based on NASA Open API: https://api.nasa.gov/
 - Deploy in Vercel
 
 - #### **Fixes**:
+  - neues Bild wird nich sofort nach der Mitternacht veröffentlicht, sondern später. Ein Fehler "Date must be between Jun 16, 1995 and {Datum von gestern}" tritt deshalb ein.
 
 ### Optional:
 
