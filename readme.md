@@ -24,6 +24,7 @@ based on NASA Open API: https://api.nasa.gov/
     -  entweder Checkbox "download"
     -  oder Link "show video" mit url zum Video
   - Background: Gradient aus https://open-props.style/ oder eine Farbe oder ein Bild [done, can be changed]
+  - Footer mit Navigation: << Prev  1(aktuelle Seite)  Next >>
 
 - Je details-Seite hat eigene URL
 - Ansicht / Anzahl der Bilder: Bilder absteigend nach Zeit angezeigt - von heutigem Datum in Vergangenheit soweit wie möglich. 40 Bilder pro Seite.
