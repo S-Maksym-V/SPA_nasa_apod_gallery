@@ -35,6 +35,7 @@ based on NASA Open API: https://api.nasa.gov/
   - infinite (from today in the past so far as possible)
   - time period (user defined time period)
   - birthday images (images that published on your birthdays) - Geburtsdatum eintragen und Bilder angezeigt, die auf entsprechenden Geburtstagen veröffentlicht wurden
+  - random (defined number of random images)
 
 - Animation:
 
