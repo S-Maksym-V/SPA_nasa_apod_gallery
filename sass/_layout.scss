@@ -33,19 +33,24 @@ button {
 }
 
 .tile {
-  height: 20rem;
+  height: 21rem;
   padding: 0.5rem;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 
   &__img {
     display: block;
     border-radius: 1rem;
     width: 100%;
-    max-height: 100%;
+    max-height: 95%;
+  }
+  > div {
+    color: var(--background-color);
+    font-size: 1rem;
   }
 }
 
@@ -54,4 +59,20 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.apod-page {
+  padding: 1rem;
+  > div {
+    display: block;
+    text-align: right;
+    margin-bottom: 0.5rem;
+  }
+  > img {
+    width: 100%;
+  }
+  &__copyright {
+    text-align: right;
+    font-size: 0.8rem;
+  }
 }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { CirclesWithBar } from 'react-loader-spinner';
 
 import { fetchNasaApi } from '../nasaAPI';
 import { increaseDate } from '../helpers';
@@ -8,8 +9,8 @@ import PicturesSet from './PicturesSet';
 import FooterNavigation from './FooterNavigation';
 
 export default function GalleryRoot() {
-  const dateRangeSize = 30; //Anzahl der angezeigten Bilder
-  const endDate = new Date(/* '2023-04-05' */); //heutiges Datum
+  const dateRangeSize = 20; //Anzahl der angezeigten Bilder
+  const endDate = new Date(); //heutiges Datum
   const startDate = increaseDate(endDate, -dateRangeSize + 1); //vor dateRangeSize-Tagen von heutigem Datum
 
   const [dateRange, setDateRange] = useState([startDate, endDate]);
@@ -22,6 +23,7 @@ export default function GalleryRoot() {
           params: {
             start_date: dateRange[0].toLocaleDateString('en-CA'), //str format: YYYY-MM-DD
             end_date: dateRange[1].toLocaleDateString('en-CA'),
+            thumbs: true,
           },
         });
         setPicsArray(data);
@@ -33,11 +35,19 @@ export default function GalleryRoot() {
     fetchApods();
   }, [dateRange]);
 
+  // console.log(picsArray);
+
+  const sortPicsArray = picsArray.sort((a, b) => (a.date > b.date ? -1 : 1));
+
   return (
     <>
       <h1>Gallery of NASA APOD (Astronomy Picture of the Day)</h1>
-      <ControlPanel />
-      <PicturesSet picsArray={picsArray} />
+      {/* <ControlPanel /> */}
+      {picsArray.length ? (
+        <PicturesSet picsArray={sortPicsArray} />
+      ) : (
+        <CirclesWithBar />
+      )}
       <FooterNavigation
         dateRange={dateRange}
         setDateRange={setDateRange}
