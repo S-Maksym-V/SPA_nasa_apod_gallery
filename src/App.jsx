@@ -6,7 +6,9 @@ import ApodDetails from './components/ApodDetails';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Route path="/" component={GalleryRoot} />
-    <Route path="/apod/:date" component={ApodDetails} />
+    <>
+      <Route path="/" component={GalleryRoot} />
+      <Route path="/apod/:date" component={ApodDetails} />
+    </>
   </React.StrictMode>
 );
