@@ -28,7 +28,7 @@ based on NASA Open API: https://api.nasa.gov/
   - eigene URL [done]
   - Details zu APOD angezeigt: title, date, explanation, url, hd url, HD-Bild oder Video-Thumbnail, copyright(wenn gibt's) [done]
 - Ansicht / Anzahl der Bilder: Bilder absteigend nach Zeit angezeigt - von heutigem Datum in Vergangenheit soweit wie möglich. Einstellbare Anzahl der Bilder pro Seite. [done]
-- Deploy in Vercel [done]
+- Deploy in Vercel [failed]
 
 - #### **Fixes**:
   - neues Bild wird nich sofort nach der Mitternacht veröffentlicht, sondern später. Ein Fehler "Date must be between Jun 16, 1995 and {Datum von gestern}" tritt deshalb ein.
