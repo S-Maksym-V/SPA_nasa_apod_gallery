@@ -12,6 +12,7 @@ export default function FooterNavigation({
   const startDateStr = dateRange[0].toLocaleDateString('de-DE');
   const endDateStr = dateRange[1].toLocaleDateString('de-DE');
 
+  //benutzt für Prüfung, ob heutiges Datum schon erreicht
   const isNewEndDateBiggerEqlToToday = isFirstDateBiggerEqlSecond(
     increaseDate(dateRange[1], rangeSize),
     new Date()
@@ -26,7 +27,7 @@ export default function FooterNavigation({
             setDateRange([
               //Bedingung für start-date
               isNewEndDateBiggerEqlToToday
-                ? dateRange[0] //lassen letztes start-date
+                ? increaseDate(new Date(), -rangeSize + 1) //start-date = heute - Zeitabstand
                 : increaseDate(dateRange[1], 1), //ändern start-date
               //Bedingung für end-date
               isNewEndDateBiggerEqlToToday

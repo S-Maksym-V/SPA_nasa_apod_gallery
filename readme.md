@@ -6,30 +6,29 @@ based on NASA Open API: https://api.nasa.gov/
 
 ### Min:
 
-- nutzen api_key for samav99(delete from final) or DEMO_KEY [!!!]
+- nutzen api_key for samav99(delete from final) or DEMO_KEY [done]
 - Git Version Control [done]
 - leeres Projekt zum Stand der Projektvorlage(vite-react-starter) bringen [done]
 
 - Index-Seite:
 
   - Überschrift [done]
-  - Button "Download selected":
-    - Button erstellen [done]
-    - Ausgegraut, bis nichts markiert
   - Ein Feld mit:
-    -  Bild-Kacheln [done]
-    -  oder Video-Thumbnail
-  - Übergang zur details-Seite (Info über Bild/Video) beim Click auf einer Kachel
+    - Bild-Kacheln [done]
+    - oder Video-Thumbnail [done]
+  - Übergang zur details-Seite (Info über Bild/Video) beim Click auf einer Kachel [done]
   - Jede Kachel:
-    -  entweder Checkbox "download"
-    -  oder Link "show video" mit url zum Video
-  - Background: Gradient aus https://open-props.style/ oder eine Farbe oder ein Bild [done, can be changed]
-  - Footer mit Navigation: << Prev  1(aktuelle Seite)  Next >>
+    - entweder Checkbox "download"
+    - oder Link "show video" mit url zum Video
+  - Background: Gradient aus https://open-props.style/ oder eine Farbe oder ein Bild [done]
+  - Footer mit Navigation: << Prev {aktuelles Zeitraum} Next >>: [done]
+    - Button "<< Prev" wird gesperrt, wenn heutiges Datum erreicht [done]
 
-- Je details-Seite hat eigene URL
-- Ansicht / Anzahl der Bilder: Bilder absteigend nach Zeit angezeigt - von heutigem Datum in Vergangenheit soweit wie möglich. 40 Bilder pro Seite.
-- Beim Click auf "Download selected" alle "selected" Bilder in Originalgröße herunterladen
-- Deploy in Vercel
+- Je details-Seite hat:
+  - eigene URL [done]
+  - Details zu APOD angezeigt: title, date, explanation, url, hd url, HD-Bild oder Video-Thumbnail, copyright(wenn gibt's) [done]
+- Ansicht / Anzahl der Bilder: Bilder absteigend nach Zeit angezeigt - von heutigem Datum in Vergangenheit soweit wie möglich. Einstellbare Anzahl der Bilder pro Seite. [done]
+- Deploy in Vercel [done]
 
 - #### **Fixes**:
   - neues Bild wird nich sofort nach der Mitternacht veröffentlicht, sondern später. Ein Fehler "Date must be between Jun 16, 1995 and {Datum von gestern}" tritt deshalb ein.
@@ -52,8 +51,13 @@ based on NASA Open API: https://api.nasa.gov/
   - Überschrift: Gallery of NASA APOD (Astronomy Picture of the Day) --> reduzieren bis "Gallery of NASA APOD"
 - Responsive details-Seiten
 
+- Beim Click auf "Download selected" alle "selected" Bilder in Originalgröße herunterladen
+
 - Index-Seite:
 
+  - Button "Download selected":
+    - Button erstellen [done]
+    - Ausgegraut, bis nichts markiert
   - Bild-Kachel hat:
     - Click auf Bild unmittelbar - Overlay mit dem Bild in Originalgröße
     - Zeichen (Checkbox) "Favorite" (Sternchen / Herz) - alle Favorite-Bilder durch Button "Download selected" zusammenherunterladen.
