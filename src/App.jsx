@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import GalleryRoot from './components/GalleryRoot';
-import { Route } from 'wouter';
-import ApodDetails from './components/ApodDetails';
+
+import ApodRoot from './components/ApodRoot';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <>
-      <Route path="/" component={GalleryRoot} />
-      <Route path="/apod/:date" component={ApodDetails} />
-    </>
+    <ApodRoot />
   </React.StrictMode>
 );

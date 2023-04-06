@@ -8,7 +8,7 @@ import ControlPanel from './ControlPanel';
 import PicturesSet from './PicturesSet';
 import FooterNavigation from './FooterNavigation';
 
-export default function GalleryRoot() {
+export default function GallerySite() {
   const dateRangeSize = 20; //Anzahl der angezeigten Bilder
   const endDate = new Date(); //heutiges Datum
   const startDate = increaseDate(endDate, -dateRangeSize + 1); //vor dateRangeSize-Tagen von heutigem Datum
