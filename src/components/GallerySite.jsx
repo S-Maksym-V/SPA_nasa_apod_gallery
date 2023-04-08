@@ -4,7 +4,7 @@ import { CirclesWithBar } from 'react-loader-spinner';
 import { fetchNasaApi } from '../nasaAPI';
 import { increaseDate } from '../helpers';
 
-import ControlPanel from './ControlPanel';
+import HeadPanel from './HeadPanel';
 import PicturesSet from './PicturesSet';
 import FooterNavigation from './FooterNavigation';
 
@@ -42,7 +42,7 @@ export default function GallerySite() {
   return (
     <>
       <h1>Gallery of NASA APOD (Astronomy Picture of the Day)</h1>
-      {/* <ControlPanel /> */}
+      <HeadPanel />
       {picsArray.length ? (
         <PicturesSet picsArray={sortPicsArray} />
       ) : (

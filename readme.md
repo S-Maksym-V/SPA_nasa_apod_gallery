@@ -13,6 +13,7 @@ based on NASA Open API: https://api.nasa.gov/
 - Index-Seite:
 
   - Überschrift [done]
+  - Beschreibung [done]
   - Ein Feld mit:
     - Bild-Kacheln [done]
     - oder Video-Thumbnail [done]
