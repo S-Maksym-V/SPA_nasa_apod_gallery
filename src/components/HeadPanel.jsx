@@ -12,13 +12,14 @@ export default function HeadPanel() {
       </div>
       {toggleAbout && (
         <p className="read-about__page">
-          Hi! You are on my gallery page. It shows Astronomy Pictures Of the Day
+          Hi! Welcome to my gallery page. It shows Astronomy Pictures Of the Day
           (APODs) from <a href="https://api.nasa.gov/">NASA Open APIs</a>. Each
-          tile/photo is interactive. So you can click/touch on it to show
-          details & the photo in a larger size. <br />
+          photo is interactive. So you can click/touch on it to see details &
+          the photo in a larger size. <br />
           The photos are sorted in descending order from today in the past till
           16.06.1995. <br />
-          Sometimes NASA publishes videos. You can see it via link in details.
+          On some days NASA publishes video instead of photo. You can see it by
+          using link in details.
           <br />
           Good luck. You are awesome!
         </p>
