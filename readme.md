@@ -6,7 +6,7 @@ based on NASA Open API: https://api.nasa.gov/
 
 ### Min:
 
-- nutzen api_key for samav99(delete from final) or DEMO_KEY [done]
+- nutzen api_key for samav99 or DEMO_KEY [done]
 - Git Version Control [done]
 - leeres Projekt zum Stand der Projektvorlage(vite-react-starter) bringen [done]
 
