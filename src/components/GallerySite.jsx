@@ -46,7 +46,9 @@ export default function GallerySite() {
       {picsArray.length ? (
         <PicturesSet picsArray={sortPicsArray} />
       ) : (
-        <CirclesWithBar />
+        <div className="loading">
+          <CirclesWithBar />
+        </div>
       )}
       <FooterNavigation
         dateRange={dateRange}

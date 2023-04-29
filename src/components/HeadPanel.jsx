@@ -1,7 +1,7 @@
 import { useToggle } from '../hooks/useToggle';
 
 export default function HeadPanel() {
-  const [toggleAbout, toggle] = useToggle(false);
+  const [toggleAbout, toggle] = useToggle(true);
   console.log(toggleAbout);
   return (
     <>

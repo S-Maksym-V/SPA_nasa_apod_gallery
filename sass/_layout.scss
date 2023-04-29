@@ -42,6 +42,7 @@ button {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  justify-content: center;
 
   &__img {
     display: block;
@@ -88,5 +89,13 @@ footer {
   }
   &__page {
     margin: 0.5rem;
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  &__apod-details {
+    margin-top: 5rem;
   }
 }

@@ -33,7 +33,11 @@ export default function ApodDetails({ params }) {
   }
 
   if (!apodData) {
-    return <CirclesWithBar />;
+    return (
+      <div className="loading loading__apod-details">
+        <CirclesWithBar />
+      </div>
+    );
   }
   const {
     copyright,
